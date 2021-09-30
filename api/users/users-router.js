@@ -11,8 +11,18 @@ router.get('/', restricted, (req, res, next) => {
     .catch(next);
 })
 
+
+// router.get('/', restricted, async (req, res, next) => {
+//   try {
+//     if ()
+//   } catch (err) {
+//     next(err);
+//   }
+// })
+
 module.exports = router;
 /**
+ *
   [GET] /api/users
 
   This endpoint is RESTRICTED: only authenticated clients
